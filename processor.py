@@ -60,11 +60,11 @@ def process_email(service, message_id):
 
         # Extract responses
         date = datetime.now().date().strftime("%Y-%m-%d")
-        mood = int(response_lines[4].split(":")[1].strip())
-        portfolio = response_lines[5].split(":")[1].strip()
-        calories = response_lines[6].split(":")[1].strip()
-        gym = bool(response_lines[7].split(":")[1].strip())
-        weight = response_lines[8].split(":")[1].strip()
+        mood = int(response_lines[5].split(":")[1].strip())
+        portfolio = response_lines[6].split(":")[1].strip()
+        calories = response_lines[7].split(":")[1].strip()
+        gym = bool(response_lines[8].split(":")[1].strip())
+        weight = response_lines[9].split(":")[1].strip()
 
         # Store responses in the database
         store_responses(date, mood, portfolio, calories, gym, weight)
