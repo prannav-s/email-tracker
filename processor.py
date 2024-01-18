@@ -110,3 +110,5 @@ def process_emails():
     results = service.users().messages().list(userId='me', q=combined_query, labelIds=['INBOX']).execute()
     messages = results.get('messages', [])
     process_email(service, messages[0]['id'])
+
+process_emails()
