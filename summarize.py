@@ -93,6 +93,4 @@ Weight difference: {weight_difference}'''
     except Exception as e:
         print(f"Error sending email: {e}")
 
-send_summary()
-
 

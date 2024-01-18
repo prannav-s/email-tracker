@@ -111,4 +111,3 @@ def process_emails():
     messages = results.get('messages', [])
     process_email(service, messages[0]['id'])
 
-process_emails()
