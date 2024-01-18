@@ -161,5 +161,5 @@ cython_debug/
 
 #OTHER
 credentials.json
-questionnaire_responses.db
+responses.db
 token.json

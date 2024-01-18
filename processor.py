@@ -8,7 +8,7 @@ from google.oauth2.credentials import Credentials
 from datetime import datetime
 
 # Connect to SQLite database (or create a new one)
-conn = sqlite3.connect('questionnaire_responses.db')
+conn = sqlite3.connect('responses.db')
 cursor = conn.cursor()
 
 # Create a table to store responses
